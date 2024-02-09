@@ -1,23 +1,20 @@
-# -API-s-automation
+# LinkedIn Data Extraction
+This repository contains scripts to extract user data from LinkedIn using both LinkedIn's API and Selenium for browser automation.
 
-Here are the steps to run these Python scripts in VS Code:
-
-Install Python extension
-Open VS Code and install the Python extension from the extensions marketplace. This will enable Python support in VS Code.
-Create a new Python file
-Create a new file called linkedin_scraper.py and paste the script code in it.
-
-Install dependencies
-For the LinkedIn API script, you'll need to pip install linkedin-api.
-For the Selenium script, you'll need pip install selenium beautifulsoup4.
-
-Configure API token
-For the LinkedIn API script, you'll need to get an API token from LinkedIn and assign it to the API_TOKEN variable.
-
-
-Run the script
-Press Ctrl+Shift+P and select "Python: Run Python file in terminal"
-This will run the linkedin_scraper.py file and you can provide the inputs.
-View output
-The CSV file will be saved in the same folder as the Python file. You can open it to view the extracted data.
-Let me know if you have any other questions!
+LinkedIn API Script
+File: linkedin_api.ipynb
+Utilizes LinkedIn's API to search for users based on first and last names.
+Retrieves data such as name, title, location, and profile URL for the first 10 search results.
+Selenium Script
+File: linkedin_selenium.ipynb
+Uses Selenium for browser automation to search for users on LinkedIn.
+Simulates user interaction with the LinkedIn website to extract data for the first 5 search results.
+Prerequisites
+LinkedIn API access token (for API script)
+Selenium WebDriver (ChromeDriver)
+Python packages: selenium, csv
+Usage
+Replace 'ACCESS_TOKEN' with your LinkedIn API access token in linkedin_api.ipynb
+Run the scripts and provide the first name and last name of the user when prompted.
+Data will be extracted and saved to CSV files.
+This README provides a brief overview of the scripts, their functionalities, prerequisites, and usage instructions. Users can refer to this documentation to understand how to use the scripts effectively.
